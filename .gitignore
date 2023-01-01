@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+/.vs/School_Labs/FileContentIndex
+/.vs/School_Labs/v17
+/School_Labs/School_Labs.vcxproj.user
+/School_Labs/School_Labs.vcxproj.filters
+/School_Labs/School_Labs.vcxproj
+*.sln
