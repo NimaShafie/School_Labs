@@ -36,3 +36,5 @@
 /School_Labs/School_Labs.vcxproj.filters
 /School_Labs/School_Labs.vcxproj
 *.sln
+/School_Labs/x64/Debug
+/x64/Debug
