@@ -38,3 +38,7 @@
 *.sln
 /School_Labs/x64/Debug
 /x64/Debug
+/C++/x64/Debug
+/C++/School_Labs.vcxproj.user
+/C++/School_Labs.vcxproj.filters
+/C++/School_Labs.vcxproj
