@@ -2,6 +2,7 @@
 #include "Inventory_Management.h"
 #include "Hot_Potato.h"
 #include "Stack_Warehouse.h"
+#include "Recursion.h"
 #include <iostream>
 
 int main()
@@ -13,7 +14,7 @@ int main()
 			"\n1. Inventory Management"
 			"\n2. Hot Potato (Linked Lists)"
 			"\n3. Stack Warehouse (Stack DS)"
-			"\n4. .."
+			"\n4. Recursion"
 			"\n5. Exit program\n" << endl;
 		cin >> choice;
 		switch (choice) {
@@ -27,7 +28,7 @@ int main()
 			stackWarehouseMain();
 			break;
 		case 4:
-			//
+			recursionMain();
 			break;
 		case 5:
 			std::cout << "\nQuitting program.\n";
