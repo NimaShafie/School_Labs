@@ -5,7 +5,6 @@ using namespace std;
 
 int main()
 {
-    cout << "Hello World!";
-
+    cout << "Initiating Lab Projects Now\n\n";
     inventoryMain();
 }

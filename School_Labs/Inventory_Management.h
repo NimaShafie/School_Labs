@@ -2,15 +2,18 @@
 // All fields in the input file are separated by a tab (‘\t’)
 // all "item names" are to be one word (no spaces)
 #pragma once
+#include <direct.h>
+#define GetCurrentDir _getcwd
 #include <iostream>
 #include <iomanip>
 #include <fstream>
 #include <string>
+#include <windows.h>
 using namespace std;
 
 // global const variables
-const string INPUTFILE = "C:/temp/cs136.txt";
-const string ERRORFILE = "C:/temp/cs136-errorfile.txt";
+const string INPUTFILE = "input/inventory_file.txt";
+const string ERRORFILE = "/output/inventory_management.txt";
 const int ARRSIZE = 100;
 
 // struct declaration
@@ -47,6 +50,12 @@ int inventoryMain() {
 	// array of structures declared (size based off global const ARRSIZE)
 	Inventory inventory[ARRSIZE];
 	int numOfItems = 0;
+
+	cout << "Getting current directory: ";
+	char buff[FILENAME_MAX]; //create string buffer to hold path
+	GetCurrentDir(buff, FILENAME_MAX);
+	string current_working_dir(buff);
+	cout << current_working_dir << endl << endl;
 
 	// open and read data, (sorts valid data and splits invalid data)
 	readData(inventory, numOfItems);
@@ -306,6 +315,14 @@ void printReport(struct Inventory* inventory, int numOfItems) {
 		"Total Worth: " << fixed << showpoint << setprecision(2) << totalWorth << "\n"
 		"Total Count of all items: " << itemCount << "\n" << endl;
 }
+
+// gets current directory
+//string get_current_dir() {
+//	char buff[FILENAME_MAX]; //create string buffer to hold path
+//	GetCurrentDir(buff, FILENAME_MAX);
+//	string current_working_dir(buff);
+//	return current_working_dir;
+//}
 
 /*
 Record sample:
