@@ -18,10 +18,10 @@ int main()
 			"\n5. Exit program\n" << endl;
 		cin >> choice;
 		switch (choice) {
-		case 1:		// Inv Management
+		case 1:
 			inventoryMain();
 			break;
-		case 2:		// Hot Potato
+		case 2:
 			hotPotatoMain();
 			break;
 		case 3:
