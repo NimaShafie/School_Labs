@@ -11,3 +11,6 @@ Imitation of a warehouse that can create and take orders to fill warehouse inven
 
 ## 4. Recursion
 Utilizie recursion to solve several different mathematical problems.
+
+## 5. Inheritance Lab
+Demonstrate the use and examples of how classes can inherit from other base classes.
