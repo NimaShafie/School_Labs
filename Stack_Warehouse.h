@@ -259,8 +259,8 @@ post -> will display order details of last popped object (last fulfilled order)
 void Stack::displayOrderDetails(Stack& stack, Deliveries_Orders deliverStack[],
 	Deliveries_Orders orderStack[], string& deliveryOrOrder, int& orderNumber,
 	int& widgetsToAccept, int& qtyShipped, float& pricePerWidget) {
-	float priceForCustomer = (pricePerWidget * 2.0);
-	float totalCostForCustomer = (priceForCustomer * qtyShipped);
+	double priceForCustomer = (pricePerWidget * 2.0);
+	double totalCostForCustomer = (priceForCustomer * qtyShipped);
 	int remainingWidgetsToSend = (widgetsToAccept - qtyShipped);
 
 	cout << "\nTransaction Details:\n";

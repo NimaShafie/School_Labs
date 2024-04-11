@@ -18,10 +18,10 @@ const int ARRSIZE = 100;
 
 // struct declaration
 struct Inventory {
-	string itemID;
+	string itemID = "";
 	string itemName = "";
-	int stockPresent;
-	float itemPrice;
+	int stockPresent = 0;
+	float itemPrice = 0;
 };
 
 // function declaration
@@ -54,8 +54,11 @@ int inventoryMain() {
 	cout << "Getting current directory: ";
 	char buff[FILENAME_MAX]; //create string buffer to hold path
 	GetCurrentDir(buff, FILENAME_MAX);
+
 	string current_working_dir(buff);
 	cout << current_working_dir << endl << endl;
+
+	cout << "\ntesting another path: " << endl;
 
 	// open and read data, (sorts valid data and splits invalid data)
 	readData(inventory, numOfItems);
