@@ -45,3 +45,11 @@
 /.vs
 /C++/.vs/School_Labs
 /C++/.vs
+/cpp-lab-project/Debug
+/cpp-lab-project/x64/Debug
+/Debug
+/cpp-lab-project.vcxproj
+/cpp-lab-project.vcxproj.filters
+/cpp-lab-project.vcxproj.user
+/CppProperties.json
+/School_Labs.cpp
